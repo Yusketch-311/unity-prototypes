@@ -1,4 +1,4 @@
-/* ====== 基本設定 ====== */
+/* ====== 基本 ====== */
 body {
   font-family: "Noto Sans JP", system-ui, sans-serif;
   line-height: 1.8;
@@ -7,6 +7,7 @@ body {
   color: #1e293b;
 }
 
+/* ====== リンク ====== */
 a {
   color: #2563eb;
   text-decoration: none;
@@ -17,50 +18,44 @@ a:hover {
 
 /* ====== コンテナ ====== */
 .container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 900px;  /* 少し広めに */
+  margin: 0 auto;
+  padding: 0 1.2rem;
 }
 
-/* ====== ヘッダー＆ナビ ====== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+/* ====== ヘッダー ====== */
+.site-header {
   background: #f8fafc;
   border-bottom: 1px solid #e5e7eb;
 }
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
 
-.nav-title a {
-  font-weight: 600;
-  font-size: 1.2rem;
+.site-title a {
+  font-weight: 700;
+  font-size: 1.5rem;
   color: #1e293b;
 }
 
 .nav-links a {
-  margin-left: 1.2rem;
+  margin-left: 1.5rem;
   font-size: 0.95rem;
   color: #334155;
 }
-
 .nav-links a:hover {
   color: #2563eb;
-}
-
-.nav-divider {
-  border: none;
-  border-top: 1px solid #e2e8f0;
-  margin: 0;
 }
 
 /* ====== コンテンツ ====== */
 h1, h2, h3 {
   color: #0f172a;
-  margin-top: 1.6em;
-  margin-bottom: 0.6em;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
 }
-
 p {
   margin: 1em 0;
 }
@@ -81,7 +76,6 @@ sup a.footnote {
   color: #2563eb;
   font-size: 0.8em;
 }
-
 .footnotes {
   border-top: 1px solid #e5e7eb;
   margin-top: 2em;
@@ -90,20 +84,10 @@ sup a.footnote {
   color: #475569;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
-  font-size: 0.85rem;
-  color: #64748b;
-  border-top: 1px solid #e5e7eb;
-}
-
 /* ====== 外部リンクカード ====== */
 .links-section {
   margin-top: 3rem;
 }
-
 .links-section h2 {
   font-size: 1.3rem;
   color: #1e293b;
@@ -111,13 +95,11 @@ footer {
   border-left: 4px solid #2563eb;
   padding-left: 0.6rem;
 }
-
 .links-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
-
 .link-card {
   display: block;
   background: #ffffff;
@@ -128,13 +110,11 @@ footer {
   transition: all 0.25s ease;
   text-decoration: none;
 }
-
 .link-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(37, 99, 235, 0.15);
   border-color: #bfdbfe;
 }
-
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -143,14 +123,22 @@ footer {
   font-weight: 600;
   color: #1d4ed8;
 }
-
 .card-header .arrow {
   font-size: 1rem;
   color: #3b82f6;
 }
-
 .link-card p {
   color: #475569;
   font-size: 0.9rem;
   line-height: 1.6;
+}
+
+/* ====== フッター ====== */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  border-top: 1px solid #e5e7eb;
 }
