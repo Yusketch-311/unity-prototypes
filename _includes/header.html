@@ -1,11 +1,16 @@
-<nav class="navbar">
-  <div class="nav-title">
+<header class="site-header">
+  <div class="site-title">
     <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
   </div>
-  <div class="nav-links">
+
+  <button id="nav-toggle" aria-label="Toggle Navigation">
+    ☰
+  </button>
+
+  <nav id="site-nav" class="site-nav">
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/about' | relative_url }}">About</a>
     <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-  </div>
-</nav>
+  </nav>
+</header>
 <hr class="nav-divider" />
