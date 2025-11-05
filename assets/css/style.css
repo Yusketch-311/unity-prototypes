@@ -1,95 +1,156 @@
+/* ====== 基本設定 ====== */
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  line-height: 1.7;
-  margin: 2rem auto;
-  max-width: 800px;
-  padding: 0 1rem;
-  background-color: #fafafa;
-  color: #333;
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  background: #ffffff;
+  color: #1e293b;
 }
 
 a {
-  color: #0066cc;
+  color: #2563eb;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-nav {
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
+/* ====== コンテナ ====== */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-h1, h2, h3 {
-  color: #222;
-  margin-top: 1.5rem;
-}
-
-footer {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #777;
-}
-
-/* ───────────────
-   引用（blockquote）
-──────────────── */
-blockquote {
-  border-left: 4px solid #3B82F6;
+/* ====== ヘッダー＆ナビ ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   background: #f8fafc;
-  padding: 0.8em 1.2em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-title a {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #1e293b;
+}
+
+.nav-links a {
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 0;
+}
+
+/* ====== コンテンツ ====== */
+h1, h2, h3 {
+  color: #0f172a;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+/* ====== 引用 ====== */
+blockquote {
+  border-left: 4px solid #2563eb;
+  background: #f1f5f9;
+  padding: 0.8em 1em;
   margin: 1.5em 0;
-  font-style: italic;
-  color: #374151;
-  border-radius: 0 8px 8px 0;
+  color: #475569;
+  border-radius: 0 6px 6px 0;
 }
 
-blockquote p {
-  margin: 0.5em 0;
-}
-
-/* ───────────────
-   脚注（kramdownの[^1]構文）
-──────────────── */
+/* ====== 脚注 ====== */
 sup a.footnote {
   text-decoration: none;
   color: #2563eb;
-  font-weight: 600;
   font-size: 0.8em;
-  margin-left: 2px;
 }
 
 .footnotes {
-  font-size: 0.9em;
-  color: #374151;
   border-top: 1px solid #e5e7eb;
   margin-top: 2em;
   padding-top: 1em;
+  font-size: 0.9em;
+  color: #475569;
 }
 
-.footnotes ol {
-  margin-left: 1.5em;
-  padding-left: 0;
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  border-top: 1px solid #e5e7eb;
 }
 
-.footnotes li {
-  margin-bottom: 0.6em;
-  line-height: 1.6;
+/* ====== 外部リンクカード ====== */
+.links-section {
+  margin-top: 3rem;
 }
 
-.footnotes a.reversefootnote {
+.links-section h2 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #2563eb;
+  padding-left: 0.6rem;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+}
+
+.link-card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.08);
+  transition: all 0.25s ease;
   text-decoration: none;
-  margin-left: 6px;
-  color: #9ca3af;
-  font-size: 0.8em;
 }
 
-/* ───────────────
-   長文でも読みやすく
-──────────────── */
-article p, article li {
-  line-height: 1.8;
+.link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.15);
+  border-color: #bfdbfe;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.card-header .arrow {
+  font-size: 1rem;
+  color: #3b82f6;
+}
+
+.link-card p {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }

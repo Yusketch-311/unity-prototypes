@@ -2,7 +2,6 @@ title: "Writing Studio"
 description: "Thoughts, research, and creative experiments"
 baseurl: "/writing-studio"   # リポジトリ名
 url: "https://yusketch-311.github.io"  # 小文字推奨（GitHub PagesのURLは小文字に統一されるため）
-theme: minima
 markdown: kramdown
 
 # minimaテーマ設定

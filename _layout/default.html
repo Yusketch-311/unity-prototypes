@@ -3,29 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
-    </title>
-    <meta name="description" content="{{ page.description | default: site.description }}" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-
-    <!-- SEO Tag -->
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% seo %}
   </head>
-
   <body>
     <header>
       {% include header.html %}
     </header>
 
-    <main class="content">
+    <main class="container">
       {{ content }}
     </main>
 
     <footer>
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}</p>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }} – Powered by Jekyll</p>
     </footer>
   </body>
 </html>

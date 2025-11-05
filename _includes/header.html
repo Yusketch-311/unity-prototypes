@@ -1,6 +1,11 @@
-<nav>
-  <a href="{{ '/' | relative_url }}">Home</a> |
-  <a href="{{ '/about' | relative_url }}">About</a> |
-  <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+<nav class="navbar">
+  <div class="nav-title">
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </div>
+  <div class="nav-links">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about' | relative_url }}">About</a>
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  </div>
 </nav>
-<hr />
+<hr class="nav-divider" />

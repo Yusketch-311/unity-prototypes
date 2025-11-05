@@ -27,6 +27,4 @@ Waseda University, School of Law
   <small>{{ post.date | date: "%Y-%m-%d" }}</small>
 {% endfor %}
 
-## External Links
-- [Researchmap](https://researchmap.jp/9000017587069)
-- [Studio](https://ytwhite4017.studio.site/)
+{% include links.html %}
