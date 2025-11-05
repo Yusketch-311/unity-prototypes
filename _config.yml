@@ -1,0 +1,24 @@
+title: "Writing Studio"
+description: "Thoughts, research, and creative experiments"
+baseurl: "/writing-studio"   # リポジトリ名
+url: "https://yusketch-311.github.io"  # 小文字推奨（GitHub PagesのURLは小文字に統一されるため）
+theme: minima
+markdown: kramdown
+
+# minimaテーマ設定
+minima:
+  skin: auto
+  custom_css:
+    - /assets/css/style.css
+
+# プラグイン設定
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Kramdownオプション（脚注やマークダウン精度向上のため）
+kramdown:
+  input: GFM
+  hard_wrap: false
+  footnote_nr: 1
+  syntax_highlighter: rouge

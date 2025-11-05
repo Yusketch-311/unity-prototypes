@@ -1,0 +1,95 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+  background-color: #fafafa;
+  color: #333;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+h1, h2, h3 {
+  color: #222;
+  margin-top: 1.5rem;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* ───────────────
+   引用（blockquote）
+──────────────── */
+blockquote {
+  border-left: 4px solid #3B82F6;
+  background: #f8fafc;
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #374151;
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote p {
+  margin: 0.5em 0;
+}
+
+/* ───────────────
+   脚注（kramdownの[^1]構文）
+──────────────── */
+sup a.footnote {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-left: 2px;
+}
+
+.footnotes {
+  font-size: 0.9em;
+  color: #374151;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.footnotes ol {
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+.footnotes li {
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+.footnotes a.reversefootnote {
+  text-decoration: none;
+  margin-left: 6px;
+  color: #9ca3af;
+  font-size: 0.8em;
+}
+
+/* ───────────────
+   長文でも読みやすく
+──────────────── */
+article p, article li {
+  line-height: 1.8;
+}
