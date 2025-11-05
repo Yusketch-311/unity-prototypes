@@ -1,16 +1,19 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 走る、跳ぶ、休む
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+このサイト「YT Writing Studio」は、日々の自由研究活動を記録するためのスペースとして始めました。
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+内容は：
+- ちょっと考えたこと
+- 興味を持った記事を読んだ感想など
 
-What else do you need?
+話すようにやんわりと続けていけたらと考えています。
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+自由研究に取り組もうと思い立ち、がんばることにしました。
+
+デザインテーマは、Beautiful Jekyllを利用させていただいています（Thank you!）
