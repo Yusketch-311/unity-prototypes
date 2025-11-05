@@ -4,6 +4,9 @@ baseurl: "/writing-studio"   # リポジトリ名
 url: "https://yusketch-311.github.io"  # 小文字推奨（GitHub PagesのURLは小文字に統一されるため）
 markdown: kramdown
 
+# 使うテーマ
+theme: minima
+
 # minimaテーマ設定
 minima:
   skin: auto
@@ -16,8 +19,20 @@ plugins:
   - jekyll-seo-tag
 
 # Kramdownオプション（脚注やマークダウン精度向上のため）
+markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
   footnote_nr: 1
   syntax_highlighter: rouge
+
+# ナビゲーションリンク（ヘッダーやフッターに表示）
+header_pages:
+  - index.md
+  - about.md
+  - links.md
+
+# オプション（見やすくするため）
+paginate: 5
+paginate_path: "/page:num/"
+show_feed: true
